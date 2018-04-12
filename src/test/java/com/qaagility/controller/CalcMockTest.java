@@ -1,30 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @Umasankarreddy123
-
-1
-0
-
-    2
-
-ash1shm/OldCounterWebProject
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Insights
-OldCounterWebProject/src/test/java/com/qaagility/controller/CalcMockTest.java
-36770bb 16 days ago
-@ash1shm ash1shm Update CalcMockTest.java
-79 lines (61 sloc) 1.85 KB
 package com.qaagility.controller;
 
 import com.qaagility.controller.Calculator;
@@ -99,20 +72,4 @@ public class CalcMockTest {
         assertEquals("Result", 9, 9);
       }
 	
-    }
-
-    © 2018 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    API
-    Training
-    Shop
-    Blog
-    About
-
-Press h to open a hovercard with more details.
+}
