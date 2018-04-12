@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import com.qaagility.controller.Calculator;
  
 
-public class AppTest {
+public class test {
 
 Calculator myCalc = new Calculator();
 
