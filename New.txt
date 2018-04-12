@@ -1,0 +1,14 @@
+artifactory_url="http://127.0.0.1:8081/artifactory"
+
+repo=libs-snapshot-local    
+artifact=com/qaagility/CounterWebApp  
+name=$artifact   
+
+url="$artifactory_url/$repo/$artifact"  ## genrate complete artifact url/path to where build resides.
+echo "URL: " + $url
+
+version=`curl -s $url/maven-metadata.xml | grep latest | sed "s/.*<latest>\([^<]*\)<\/latest>.*/\1/"`
+build=`curl -s $url/$version/maven-metadata.xml | grep '<value>' | head -1 | sed "s/.*<value>\([^<]*\)<\/value>.*/\1/"`
+BUILD_LATEST="$url/$version/CounterWebApp-$build.war"   ## Storing latest build (war) value into "BUILD_LATEST" variable. 
+
+echo $BUILD_LATEST > filename.txt
